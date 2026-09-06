@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="GoodDesk.API/GoodDesk.API.csproj" />
+  <Project Path="GoodDesk.DataAccess/GoodDesk.DataAccess.csproj" />
+  <Project Path="GoodDesk.DataModel/GoodDesk.DataModel.csproj" />
+  <Project Path="GoodDesk.ViewModel/GoodDesk.ViewModel.csproj" />
+  <Project Path="GoodDesk.Web/GoodDesk.Web.csproj" />
+</Solution>
