@@ -1,5 +1,5 @@
 
-using GoodDesk.DataModel;
+using GoodDesk.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 namespace GoodDesk.API
@@ -17,7 +17,7 @@ namespace GoodDesk.API
             builder.Services.AddOpenApi();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddDbContext<GoodDeskContext>(options =>
+            builder.Services.AddDbContext<GoodDeskDBContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
@@ -35,7 +35,6 @@ namespace GoodDesk.API
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
