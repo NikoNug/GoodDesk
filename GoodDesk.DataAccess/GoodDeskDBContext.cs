@@ -14,6 +14,7 @@ namespace GoodDesk.DataAccess
 
         public virtual DbSet<TBLMCategory> TBLMCategories { get; set; } = null!;
         public virtual DbSet<TBLMRole> TBLMRoles { get; set; } = null!;
+        public virtual DbSet<TBLMUser> TBLMUsers { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

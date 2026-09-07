@@ -1,6 +1,6 @@
 ﻿namespace GoodDesk.ViewModel
 {
-    public class Class1
+    public class VMLoginRequest
     {
 
     }
