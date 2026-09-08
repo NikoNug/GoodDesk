@@ -53,6 +53,20 @@ namespace GoodDesk.DataAccess
                     CreatedDate = new DateTime(2026, 1, 1)
                 }
             );
+
+            modelBuilder.Entity<TBLMUser>().HasData(
+                new TBLMUser
+                {
+                    ID = 1,
+                    Username = "admin",
+                    Email = "niko@gmail.com",
+                    PasswordHash = "admin",
+                    RoleID = 1,
+                    IsActive = true,
+                    CreatedBy = 1,
+                    CreatedDate = new DateTime(2026, 1, 1)
+                }
+            );
         }
     }
 }

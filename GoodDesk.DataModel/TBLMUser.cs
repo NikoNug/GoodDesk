@@ -12,7 +12,7 @@ namespace GoodDesk.DataModel
         [Key]
         public int ID { get; set; }
         [Required, MaxLength(50)]
-        public string username { get; set; } = null!;
+        public string Username { get; set; } = null!;
         [Required, MaxLength(100)]
         public string Email { get; set; } = null!;
         [Required]
