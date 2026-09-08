@@ -16,7 +16,7 @@ namespace GoodDesk.API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(VMLoginRequest request)
+        public async Task<IActionResult> Login([FromBody] VMLoginRequest request)
         {
             var result = await _authService.LoginAsync(request);
             if(result == null)
