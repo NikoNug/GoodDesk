@@ -6,7 +6,7 @@ namespace GoodDesk.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class AuthController : Controller
+    public class AuthController : ControllerBase
     {
         private readonly AuthService _authService;
 

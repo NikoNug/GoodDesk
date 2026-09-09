@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using GoodDesk.ViewModel.Auth;
+﻿using GoodDesk.ViewModel.Auth;
 using GoodDesk.DataAccess;
-using Microsoft.Identity.Client.NativeInterop;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace GoodDesk.API.Services
