@@ -51,20 +51,6 @@ namespace GoodDesk.DataAccess
                 }
             );
 
-            modelBuilder.Entity<TBLMUser>().HasData(
-                new TBLMUser
-                {
-                    ID = 1,
-                    Username = "admin",
-                    Email = "niko@gmail.com",
-                    PasswordHash = "admin",
-                    RoleID = 1,
-                    IsActive = true,
-                    CreatedBy = 1,
-                    CreatedDate = new DateTime(2026, 1, 1)
-                }
-            );
-
             // Table Priority
             modelBuilder.Entity<TBLMPriority>().HasData(
                 new TBLMPriority
@@ -157,6 +143,45 @@ namespace GoodDesk.DataAccess
                     Description = "Ticket has been closed",
                     Level = 5,
                     IsActive = true,
+                    CreatedBy = 1,
+                    CreatedDate = new DateTime(2026, 1, 1)
+                }
+            );
+
+            modelBuilder.Entity<TBLMCategory>().HasData(
+                new TBLMCategory
+                {
+                    ID = 1,
+                    CategoryName = "Hardware",
+                    Description = "Hardware related issues",
+                    IsDeleted = false,
+                    CreatedBy = 1,
+                    CreatedDate = new DateTime(2026, 1, 1)
+                },
+                new TBLMCategory
+                {
+                    ID = 2,
+                    CategoryName = "Software",
+                    Description = "Software related issues",
+                    IsDeleted = false,
+                    CreatedBy = 1,
+                    CreatedDate = new DateTime(2026, 1, 1)
+                },
+                new TBLMCategory
+                {
+                    ID = 3,
+                    CategoryName = "Network",
+                    Description = "Network and connectivity related issues",
+                    IsDeleted = false,
+                    CreatedBy = 1,
+                    CreatedDate = new DateTime(2026, 1, 1)
+                },
+                new TBLMCategory
+                {
+                    ID = 4,
+                    CategoryName = "Account",
+                    Description = "Account and access related issues",
+                    IsDeleted = false,
                     CreatedBy = 1,
                     CreatedDate = new DateTime(2026, 1, 1)
                 }
